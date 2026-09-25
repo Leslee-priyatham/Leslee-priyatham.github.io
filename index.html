@@ -3,133 +3,97 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Leslee's portfolio: psychology, AI evaluation, and applied AI." />
-    <meta name="theme-color" content="#f4efdf" />
-    <title>Leslee | Psychology, AI Evaluation & Applied AI</title>
-    <link rel="preload" href="assets/paper-texture.webp" as="image" type="image/webp" />
-    <link rel="stylesheet" href="styles.css?v=option2-scrollcraft-2" />
-    <script src="site.js?v=option2-scrollcraft-6" defer></script>
+    <meta name="theme-color" content="#f1f2f4" />
+    <meta name="description" content="Seva Leslee Priyatham builds applied AI tools and evaluates AI outputs with a background in psychology and research." />
+    <title>Leslee Priyatham — Applied AI & Evaluation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b438c'/%3E%3Cpath d='M19 16v32h27M34 16v32' fill='none' stroke='white' stroke-width='7' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <div class="reading-trace" role="progressbar" aria-label="Page reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-      <span class="reading-trace__fill" aria-hidden="true"></span>
-    </div>
-    <header class="site-header entrance" data-entrance="header">
-      <a class="wordmark" href="#top" aria-label="Leslee, back to top"><span aria-hidden="true">L.</span><span>Leslee</span></a>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="Leslee Priyatham, back to top">LESLEE <span>[ SP ]</span></a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#about">ABOUT</a>
+        <a class="nav-link" href="#work">WORK</a>
+        <a class="nav-link" href="#experience">EXPERIENCE</a>
+        <a class="nav-pill nav-pill-blue" href="#contact">LET'S TALK <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <p class="scribble scribble-left entrance" data-entrance="scribble" aria-hidden="true">People<br />Data<br />Better tools</p>
-        <div class="hero-copy">
-          <h1 id="hero-title" class="entrance" data-entrance="title"><span>Hi, I’m</span><em>Leslee.</em></h1>
-          <p class="hero-role entrance" data-entrance="role">Psychology graduate building<br />applied AI systems.</p>
-          <p class="hero-intro entrance" data-entrance="intro">I’m interested in how people, data, and technology intersect. I build practical AI tools that solve real problems, with a focus on evaluation, human judgment, and thoughtful implementation.</p>
-        </div>
-        <img class="hero-note collage entrance" data-entrance="note" src="assets/hero-note-v2.webp" width="720" height="480" alt="Same questions. New tools. A more human approach." />
-        <div class="hero-brain entrance" data-entrance="brain" aria-hidden="true">
-          <img src="assets/brain-sketch.webp" width="720" height="720" alt="" />
-          <p class="scribble">understand<br />evaluate<br />build<br />repeat</p>
+        <div class="hero-headline-wrap"><h1 class="hero-title" id="hero-title"><span>LESLEE</span><span class="hero-brackets">[PRIYATHAM]</span></h1></div>
+        <div class="hero-visual" aria-hidden="true"><img src="assets/hero-sculpture.png" alt="" fetchpriority="high" /></div>
+        <div class="hero-bottom">
+          <p class="hero-chip">PSYCHOLOGY <span aria-hidden="true">✳</span> APPLIED AI</p>
+          <p class="hero-note">BUILDING SYSTEMS THAT CAN<br />BE EXAMINED AND TRUSTED.</p>
+          <a class="hero-scroll" href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
         </div>
       </section>
 
-      <section class="about compact-section" id="about" aria-labelledby="about-title">
-        <div class="section-number reveal" aria-hidden="true">01.</div>
-        <div class="about-heading reveal">
-          <h2 id="about-title">About</h2>
-          <p class="scribble">From<br />psychology<br />to applied AI.</p>
+      <section class="intro section-shell" id="about" aria-labelledby="about-title">
+        <div class="section-kicker reveal">[ 01 / ABOUT ]</div>
+        <div class="intro-grid">
+          <div class="intro-left reveal"><p class="eyebrow">HELLO, I'M LESLEE.</p><h2 id="about-title">The human side<br />of <em>intelligent</em><br />systems.</h2></div>
+          <div class="intro-right reveal"><p>I build practical AI tools with a background in psychology, neuroscience research, and AI evaluation. My work asks a simple question: can someone understand and check the answer a system gives?</p><p>That question runs through my projects, from blind comparison of model responses to invoice answers that separate model output from arithmetic checks and policy evidence.</p><a class="text-link" href="#work">EXPLORE MY WORK <span aria-hidden="true">↗</span></a></div>
         </div>
-        <div class="about-copy reveal">
-          <p>I graduated with a B.Sc. in Psychology from SRM University, AP, where I developed a deep interest in how people think, make decisions, and interact with complex systems.</p>
-          <p>I continued with an M.Sc. in Clinical Psychology at Kristu Jayanti University. Clinical practice, neuroscience research at BrainSightAI, and AI evaluation work with the Handshake AI Fellowship now shape how I build: careful observation, clear evidence, and tools whose outputs can be examined.</p>
-        </div>
-        <img class="about-note collage reveal" src="assets/about-note-v2.webp" width="420" height="525" alt="Better questions build better tools." />
       </section>
 
-      <section class="projects compact-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-number reveal" aria-hidden="true">02.</div>
-        <div class="section-title-row reveal"><h2 id="projects-title">Projects</h2><p class="scribble">A few things I’ve built recently.</p></div>
-
-        <article class="project reveal" aria-labelledby="evallab-title">
-          <figure class="project-visual workflow-diagram">
-            <svg viewBox="0 0 620 300" role="img" aria-labelledby="eval-flow-title eval-flow-desc">
-              <title id="eval-flow-title">Illustrative EvalLab workflow</title>
-              <desc id="eval-flow-desc">Two responses move through blinded review into an auditable evaluation record.</desc>
-              <defs><marker id="eval-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker></defs>
-              <g class="flow-lines"><path d="M168 87 C225 87 219 135 270 135" marker-end="url(#eval-arrow)" /><path d="M168 211 C225 211 219 165 270 165" marker-end="url(#eval-arrow)" /><path d="M425 150 H493" marker-end="url(#eval-arrow)" /></g>
-              <g class="flow-card"><rect x="35" y="45" width="133" height="84" rx="10" /><text x="55" y="76">Response A</text><path d="M55 94h84M55 108h56" /></g>
-              <g class="flow-card"><rect x="35" y="169" width="133" height="84" rx="10" /><text x="55" y="200">Response B</text><path d="M55 218h84M55 232h64" /></g>
-              <g class="flow-card flow-card-accent"><rect x="270" y="104" width="155" height="92" rx="10" /><text x="291" y="139">Blind review</text><text class="flow-small" x="291" y="166">rubric + ratings</text></g>
-              <g class="flow-card"><rect x="493" y="108" width="95" height="84" rx="10" /><text x="511" y="141">Record</text><path d="M511 158h56M511 172h44" /></g>
-            </svg>
-            <figcaption class="sr-only">Illustrative workflow, not an app screenshot or evaluation result.</figcaption>
-          </figure>
-          <div class="project-body">
-            <h3 id="evallab-title">EvalLab</h3><p class="project-subtitle">A framework for evaluating AI outputs</p>
-            <div class="project-facts">
-              <div><h4>What I built</h4><p>A local evaluation workspace for blind comparison, versioned rubrics, reviewer decisions, adjudication, optional Gemini judging, and evidence exports.</p></div>
-              <div><h4>How I checked it</h4><p>Input validation, strict type checking, automated tests, separate human and judge results, and reproducible records.</p></div>
-              <div><h4>Current limits</h4><p>It is not a secured multi-user platform, and synthetic examples do not establish universal model quality.</p></div>
-            </div>
-            <div class="project-meta"><span>Python</span><span>LLMs</span><span>Evaluation</span><a href="https://github.com/Leslee-priyatham/EvalLab" target="_blank" rel="noreferrer">Open source<span class="sr-only"> (opens in a new tab)</span></a></div>
-          </div>
-        </article>
-
-        <article class="project reveal" aria-labelledby="invoice-title">
-          <figure class="project-visual workflow-diagram">
-            <svg viewBox="0 0 620 300" role="img" aria-labelledby="invoice-flow-title invoice-flow-desc">
-              <title id="invoice-flow-title">Illustrative invoice agent workflow</title>
-              <desc id="invoice-flow-desc">An invoice and question route to tools for extraction, arithmetic verification, or policy evidence.</desc>
-              <defs><marker id="invoice-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker></defs>
-              <g class="flow-lines"><path d="M153 150 H233" marker-end="url(#invoice-arrow)" /><path d="M385 150 C437 150 423 67 471 67" marker-end="url(#invoice-arrow)" /><path d="M385 150 H471" marker-end="url(#invoice-arrow)" /><path d="M385 150 C437 150 423 233 471 233" marker-end="url(#invoice-arrow)" /></g>
-              <g class="flow-card"><rect x="35" y="104" width="118" height="92" rx="10" /><text x="55" y="139">Invoice</text><text class="flow-small" x="55" y="166">+ question</text></g>
-              <g class="flow-card flow-card-accent"><rect x="233" y="104" width="152" height="92" rx="10" /><text x="256" y="139">Tool choice</text><text class="flow-small" x="256" y="166">visible trace</text></g>
-              <g class="flow-card flow-card-small"><rect x="471" y="29" width="119" height="76" rx="10" /><text x="491" y="73">Extract</text></g>
-              <g class="flow-card flow-card-small"><rect x="471" y="112" width="119" height="76" rx="10" /><text x="491" y="156">Verify</text></g>
-              <g class="flow-card flow-card-small"><rect x="471" y="195" width="119" height="76" rx="10" /><text x="491" y="239">Retrieve</text></g>
-            </svg>
-            <figcaption class="sr-only">Illustrative workflow, not an app screenshot or model output.</figcaption>
-          </figure>
-          <div class="project-body">
-            <h3 id="invoice-title">Gemini Invoice Agent</h3><p class="project-subtitle">Document processing with visible checks</p>
-            <div class="project-facts">
-              <div><h4>What I built</h4><p>A local agent that extracts invoice fields with Gemini, routes tasks, verifies totals with Decimal arithmetic, and retrieves cited policy evidence.</p></div>
-              <div><h4>How I checked it</h4><p>Offline tests cover routing and validation while the interface exposes tool names, evidence, and result summaries.</p></div>
-              <div><h4>Current limits</h4><p>It is single-user, handles one image at a time, and does not approve expenses or use real company policy.</p></div>
-            </div>
-            <div class="project-meta"><span>Python</span><span>Gemini</span><span>Validation</span><a href="https://github.com/Leslee-priyatham/gemini-invoice-agent" target="_blank" rel="noreferrer">Real-world use<span class="sr-only"> (opens in a new tab)</span></a></div>
-          </div>
-        </article>
+      <section class="statement" aria-labelledby="statement-title">
+        <div class="statement-top"><span>[ A WAY OF WORKING ]</span><span>QUESTIONS → EVIDENCE → DECISIONS</span></div>
+        <h2 id="statement-title" class="reveal">GOOD AI NEEDS<br /><span>BETTER QUESTIONS.</span></h2>
+        <div class="statement-bottom"><span class="statement-symbol" aria-hidden="true">✳</span><p>Observation from psychology. Rigor from research. Working software that makes the reasoning visible.</p></div>
       </section>
 
-      <section class="experience compact-section" id="experience" aria-labelledby="experience-title">
-        <div class="section-number reveal" aria-hidden="true">03.</div>
-        <div class="section-title-row reveal"><h2 id="experience-title">Experience</h2><p class="scribble">A few places<br />I’ve learned from.</p></div>
-        <ol class="timeline" aria-label="Professional experience in reverse chronological order">
-          <li class="timeline-item reveal"><p class="timeline-date"><time datetime="2026-07">Jul 2026</time> – <time datetime="2026-08">Aug 2026</time></p><div class="timeline-copy"><h3>AI Evaluation Specialist</h3><p class="timeline-org">Handshake AI Fellowship · Freelance · Remote</p><p>Created multi-step prompts to test AI reasoning; reviewed factual accuracy, source alignment, and logical consistency; documented errors with structured guidelines.</p></div></li>
-          <li class="timeline-item reveal"><p class="timeline-date"><time datetime="2026-01">Jan 2026</time> – <time datetime="2026-03">Mar 2026</time></p><div class="timeline-copy"><h3>Research Intern</h3><p class="timeline-org">BrainSightAI · Remote · Bangalore Urban, Karnataka</p><p>Worked with resting-state fMRI research and mapped neuroscience information into computational workflows.</p></div></li>
-          <li class="timeline-item reveal"><p class="timeline-date"><time datetime="2026-01">Jan 2026</time> · 1 month</p><div class="timeline-copy"><h3>Clinical Psychology Intern</h3><p class="timeline-org">Mind and Brain Hospital · On-site · Bangalore Urban, Karnataka</p><p>Supported case documentation, mental-status examinations, history analysis, and structured progress records.</p></div></li>
-          <li class="timeline-item reveal"><p class="timeline-date"><time datetime="2025-06">Jun 2025</time> · 1 month</p><div class="timeline-copy"><h3>Psychology Intern</h3><p class="timeline-org">Bengaluru Neuro Centre · On-site · Bengaluru, Karnataka</p><p>Worked with psychological assessment, EEG observation, clinical histories, patient records, and behavioral progress information.</p></div></li>
-          <li class="timeline-item reveal"><p class="timeline-date"><time datetime="2023-07">Jul 2023</time> – <time datetime="2023-08">Aug 2023</time></p><div class="timeline-copy"><h3>Clinical Psychology Intern</h3><p class="timeline-org">Indian Mental Health and Research Centre · On-site · Lucknow, Uttar Pradesh</p><p>Conducted case-history interviews, supported documentation and relaxation techniques, observed preliminary therapy, and joined clinician debriefs.</p></div></li>
-        </ol>
+      <section class="focus section-shell" aria-labelledby="focus-title">
+        <div class="section-kicker reveal">[ 02 / FOCUS ]</div>
+        <div class="focus-heading reveal"><p class="eyebrow">WHERE I SPEND MY TIME</p><h2 id="focus-title">Small details.<br /><em>Clearer outcomes.</em></h2></div>
+        <div class="focus-list">
+          <article class="focus-row reveal"><span class="focus-number">[01]</span><div><h3>AI evaluation</h3><p>Blind review, explicit rubrics, fact verification, and records that show how a decision was reached.</p></div><span class="focus-arrow" aria-hidden="true">↗</span></article>
+          <article class="focus-row reveal"><span class="focus-number">[02]</span><div><h3>Document agents</h3><p>Structured extraction, task routing, cited evidence, and deterministic checks alongside model output.</p></div><span class="focus-arrow" aria-hidden="true">↗</span></article>
+          <article class="focus-row reveal"><span class="focus-number">[03]</span><div><h3>Human-centered research</h3><p>Behavioral questions, careful observation, and clear documentation across psychology and neuroscience.</p></div><span class="focus-arrow" aria-hidden="true">↗</span></article>
+        </div>
+      </section>
 
-        <div class="education reveal" aria-labelledby="education-title">
-          <p class="education-kicker">Education</p><h2 id="education-title">Psychology, from foundations to clinical practice.</h2>
-          <div class="education-list">
-            <article><p class="education-date">Aug 2024 – May 2026</p><h3>Master of Science, Clinical Psychology</h3><p>Kristu Jayanti University</p></article>
-            <article><p class="education-date">Oct 2021 – May 2024</p><h3>Bachelor of Science, Psychology</h3><p>SRM University, AP</p></article>
+      <section class="projects" id="work" aria-labelledby="work-title">
+        <div class="projects-header section-shell"><div class="section-kicker reveal">[ 03 / SELECTED WORK ]</div><div class="projects-heading reveal"><h2 id="work-title">WORK THAT<br /><em>SHOWS ITS WORK.</em></h2><p>Two public, local Python projects built around inspectable outputs.</p></div></div>
+        <div class="project-stage">
+          <div class="project-copy" aria-live="polite"><div class="project-count"><span id="project-current">01</span><span class="count-rule"></span><span>02</span></div><p class="project-type" id="project-type">AI EVALUATION / PYTHON</p><h3 id="project-title">EvalLab</h3><p id="project-description">A local workspace for blind comparison of AI responses, versioned rubrics, human review, optional Gemini judging, and evidence exports.</p><div class="project-tags" id="project-tags"><span>Python</span><span>SQLite</span><span>Gemini</span></div><a class="project-link" id="project-link" href="https://github.com/Leslee-priyatham/EvalLab" target="_blank" rel="noopener noreferrer">VIEW SOURCE <span aria-hidden="true">↗</span></a></div>
+          <div class="project-art" id="project-art" aria-label="Illustrative workflow for EvalLab">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="diagram-card diagram-card-a"><span>RESPONSE A</span><i></i><i></i><i class="short"></i></div>
+            <div class="diagram-card diagram-card-b"><span>RESPONSE B</span><i></i><i class="short"></i><i></i></div>
+            <div class="diagram-center"><span>BLIND<br />REVIEW</span></div>
+            <span class="art-caption">ILLUSTRATIVE WORKFLOW · NOT AN APP SCREENSHOT</span>
           </div>
         </div>
+        <div class="project-controls section-shell"><div class="project-dots" role="tablist" aria-label="Select a project"><button type="button" role="tab" aria-selected="true" aria-label="Show EvalLab" data-project="0"></button><button type="button" role="tab" aria-selected="false" aria-label="Show Gemini Invoice Agent" data-project="1"></button></div><div class="project-buttons"><button type="button" id="project-prev" aria-label="Previous project">←</button><button type="button" id="project-next" aria-label="Next project">→</button></div></div>
       </section>
+
+      <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-kicker reveal">[ 04 / EXPERIENCE ]</div><div class="experience-grid"><div class="experience-heading reveal"><h2 id="experience-title">Different fields.<br /><em>One thread.</em></h2><p>Research, evaluation, and clinical practice have all shaped how I think about evidence.</p></div><div class="timeline">
+          <article class="timeline-item reveal"><span>2026</span><div><h3>AI Evaluation Specialist</h3><p class="timeline-org">Handshake AI · Freelance</p><p>Designed multi-hop prompts and checked AI responses for factual accuracy and logical consistency.</p></div></article>
+          <article class="timeline-item reveal"><span>2026</span><div><h3>Research Intern</h3><p class="timeline-org">BrainSightAI</p><p>Worked with resting-state fMRI research and mapped neuroscience data into computational workflows.</p></div></article>
+          <article class="timeline-item reveal"><span>JAN 2026</span><div><h3>Clinical Psychology Intern</h3><p class="timeline-org">Mind and Brain Hospital · Internship</p><p>1 month · On-site · Bangalore Urban, Karnataka, India</p></div></article>
+          <article class="timeline-item reveal"><span>JUN–JUL 2025</span><div><h3>Psychology Intern</h3><p class="timeline-org">Bengaluru Neuro Centre · Internship</p><p>2 months · On-site · Bengaluru, Karnataka, India</p></div></article>
+          <article class="timeline-item reveal"><span>JUL–AUG 2023</span><div><h3>Clinical Psychology Intern</h3><p class="timeline-org">Indian Mental Health and Research Centre · Internship</p><p>2 months · On-site · Lucknow, Uttar Pradesh, India</p></div></article>
+          <article class="timeline-item timeline-education reveal"><span>EDUCATION</span><div><h3>M.Sc. Clinical Psychology</h3><p class="timeline-org">Kristu Jayanti University · 2026</p><h3>B.Sc. Psychology (Hons)</h3><p class="timeline-org">SRM University, Andhra Pradesh · 2024</p></div></article>
+        </div></div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title"><div class="contact-top"><span>[ 05 / CONTACT ]</span><span>HAVE A QUESTION OR AN IDEA?</span></div><p class="contact-prelude reveal">I'M ALWAYS INTERESTED IN THOUGHTFUL WORK.</p><h2 id="contact-title" class="reveal"><a href="mailto:lesleepriyathamseva3@gmail.com?subject=Hello%20Leslee">LET'S TALK<span aria-hidden="true">↗</span></a></h2><div class="contact-bottom"><a href="mailto:lesleepriyathamseva3@gmail.com">lesleepriyathamseva3@gmail.com</a><a href="https://github.com/Leslee-priyatham" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/leslee-priyatham-a25408187/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="#top">BACK TO TOP ↑</a></div></section>
     </main>
-
-    <footer id="contact" class="reveal">
-      <strong>Leslee</strong><p class="scribble">Still learning. Still building.</p><span class="footer-rule" aria-hidden="true"></span>
-      <div class="footer-links" aria-label="Contact and profile links"><a href="https://github.com/Leslee-priyatham" target="_blank" rel="noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a><a href="https://linkedin.com/in/leslee-priyatham-a25408187/" target="_blank" rel="noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a><a href="#top">Back to top</a></div>
-    </footer>
+    <footer class="footer"><span>© <span id="year">2026</span> SEVA LESLEE PRIYATHAM</span><span>MADE WITH CURIOSITY & CARE.</span></footer>
   </body>
 </html>
